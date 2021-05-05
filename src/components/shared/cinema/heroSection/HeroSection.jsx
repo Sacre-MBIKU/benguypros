@@ -3,6 +3,8 @@ import bannerSection from "../../../../assets/backgrounds/hero1.png";
 import HeaderCinema from "../../../../layouts/HeaderCinema";
 import Button from "../../button/Button";
 import { Link } from "react-router-dom";
+import TitlePage from "../../../titlePage/TitlePage";
+import ScrollIcon from "../../../ScrollIcon";
 const HeroSectionCinema = () => (
   <HeroSectionDecoration banner={bannerSection}>
     <HeaderCinema />
@@ -16,6 +18,11 @@ const HeroSectionCinema = () => (
         ACCUEIL
       </Button>
     </Link>
+
+    <TitlePage>
+        FILMS
+    </TitlePage>
+    <ScrollIcon />
   </HeroSectionDecoration>
 );
 export default HeroSectionCinema;

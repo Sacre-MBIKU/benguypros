@@ -8,11 +8,11 @@ const ButtonDecoration = styled.button`
   padding: 15px 35px;
   font-family: Barlwow;
   font-weight: 700;
-  font-size: 30px;
+  font-size: ${props => props.size || "30px"};
   position: absolute;
   border-style: none;
   color: #fff;
-  bottom: 18%;
+  bottom: ${props => props.positionY|| "5%"};
   cursor : pointer;
   right:  ${props => props.positionX || "5%"};
   

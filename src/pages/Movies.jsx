@@ -1,4 +1,5 @@
 import HeroSectionCinema from "../components/shared/cinema/heroSection/HeroSection";
+import HeaderCinema from "../layouts/HeaderCinema";
 import Footer from "../layouts/home/footer/Footer";
 import MoviesByCategory from "../layouts/home/moviesByCategorie/MoviesByCategory";
 

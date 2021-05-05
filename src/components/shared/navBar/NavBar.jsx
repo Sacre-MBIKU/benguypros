@@ -2,9 +2,9 @@ import NavBarDecoration from "./NavBarDecoration";
 import Logo from "../../Logo";
 import ButtonSearch from "../buttonSearch/ButtonSearch";
 
-const NavBar = () => (
+const NavBar = ({positionX}) => (
   <NavBarDecoration>
-    <ButtonSearch />
+    <ButtonSearch positionX = {positionX} />
     <Logo />
   </NavBarDecoration>
 );

@@ -1,20 +1,20 @@
+import HeroSectionSeries from "../components/shared/cinema/heroSection/HeroSectionSeries";
 import Footer from "../layouts/home/footer/Footer";
-import HeroSection from "../layouts/home/heroSection/HeroSection";
 import MoviesByCategory from "../layouts/home/moviesByCategorie/MoviesByCategory";
 
-const Series = () => {
+const Movies = () => {
   return (
     <div
       style={{
         overflowX: "hidden",
       }}
     >
-      <HeroSection />
-      <MoviesByCategory titleCategory="Séries" />
-      <MoviesByCategory titleCategory="Séries" />
+      <HeroSectionSeries />
+      <MoviesByCategory titleCategory="Bay" />
+      <MoviesByCategory titleCategory="Bey" />
       <Footer />
     </div>
   );
 };
 
-export default Series;
+export default Movies;

@@ -8,7 +8,7 @@ const SearchIcon = () => (
         width : "auto",
         color : "black",
         cursor : "pointer",
-        transform : 'translate(50%, 25%)'
+        transform : 'translate(50%, 25%)',
     }
   } >
     <FaSearchengin />

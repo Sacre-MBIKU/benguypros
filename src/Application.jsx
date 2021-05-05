@@ -1,15 +1,23 @@
-import HeroSection from "./layouts/home/heroSection/HeroSection";
-import MoviesByCategory from "./layouts/home/moviesByCategorie/MoviesByCategory";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import Movies from "./pages/Movies";
+import Series from "./pages/Series";
 
 const Application = () => {
   return (
-    <div style = {{
-        overflowX : "hidden"
-    }}>
-      <HeroSection />
-      <MoviesByCategory />
-      <MoviesByCategory />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/movies">
+          <Movies />
+        </Route>
+        <Route path="/series">
+          <Series />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 };
 

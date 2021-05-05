@@ -4,12 +4,12 @@ import MovieContainer from "../../../components/shared/movieContainer/MovieConta
 import TitleCategory from "../../../components/shared/titleCategory/TitleCategory";
 import MoviesByCategorieDecoration from "./MoviesByCategoryDecoration";
 
-const MoviesByCategorie = () => (
+const MoviesByCategorie = ({ titleCategory, displayScroll }) => (
   <MoviesByCategorieDecoration>
     <LimitationLine />
-    <TitleCategory>Nouveautés</TitleCategory>
+    <TitleCategory>{titleCategory}</TitleCategory>
     <MovieContainer />
-    <ScrollIcon positionY="2%" positionX="5%" />
+    <ScrollIcon positionY="2%"  displayScroll={displayScroll} />
   </MoviesByCategorieDecoration>
 );
 export default MoviesByCategorie;

@@ -13,6 +13,7 @@ const ButtonDecoration = styled.button`
   border-style: none;
   color: #fff;
   bottom: 18%;
+  cursor : pointer;
   right:  ${props => props.positionX || "5%"};
   
 `;

@@ -13,7 +13,7 @@ const HeroSectionCinema = () => (
         SERIES
       </Button>
     </Link>
-    <Link to="/movies">
+    <Link to="/">
       <Button bgSecondary="#080A16" positionX="16%" positionY="89%" size="15px">
         ACCUEIL
       </Button>

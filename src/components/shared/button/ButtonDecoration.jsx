@@ -15,6 +15,11 @@ const ButtonDecoration = styled.button`
   bottom: ${props => props.positionY|| "5%"};
   cursor : pointer;
   right:  ${props => props.positionX || "5%"};
+
+  &:hover {
+    background-color: ${props =>  "#fff" || props.bgSecondary} ;
+    color : #1a1a1a
+  }
   
 `;
 

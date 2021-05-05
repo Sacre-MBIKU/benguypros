@@ -4,23 +4,23 @@ import GoogleFontLoader from "react-google-font-loader";
 <GoogleFontLoader fonts={[{ font: "Barlow", weights: [400, 700, 900] }]} />;
 
 const ButtonDecoration = styled.button`
-  background-color: ${props => props.bgSecondary || "#f9bf2c"} ;
+  background-color: ${(props) => props.bgSecondary || "#f9bf2c"};
   padding: 15px 35px;
   font-family: Barlwow;
   font-weight: 700;
-  font-size: ${props => props.size || "30px"};
+  font-size: ${(props) => props.size || "30px"};
   position: absolute;
   border-style: none;
   color: #fff;
-  bottom: ${props => props.positionY|| "5%"};
-  cursor : pointer;
-  right:  ${props => props.positionX || "5%"};
+  bottom: ${(props) => props.positionY || "5%"};
+  cursor: pointer;
+  right: ${(props) => props.positionX || "5%"};
+  transition: all .5s ease-in-out;
 
   &:hover {
-    background-color: ${props =>  "#fff" || props.bgSecondary} ;
-    color : #1a1a1a
+    background-color: transparent;
+    border: 1px solid #f9bf2c;
   }
-  
 `;
 
 export default ButtonDecoration;

@@ -12,7 +12,7 @@ position: absolute;
 border-style: none;
 color: #fff;
 top: 3%;
-right: 5%;
+right: ${({positionX}) => positionX ? positionX : "5%"};
 border: 1px solid #f9bf2c;
 `;
 

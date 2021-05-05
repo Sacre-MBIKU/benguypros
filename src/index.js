@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Application from "./Application";
 import "./index.css";
-import HomeFirstSection from "./layouts/home/heroSection/HeroSection";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomeFirstSection />
+    <Application />
   </React.StrictMode>,
   document.getElementById("root")
 );

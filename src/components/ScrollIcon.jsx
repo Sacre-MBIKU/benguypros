@@ -13,12 +13,15 @@ const moveTopToDown = keyframes`
 
 const ScrollIconDecoration = styled.img`
   position: absolute;
-  bottom: 10%;
-  left: 50%;
+  bottom: ${({ positionY }) => (positionY ? positionY : "10%")};
+  left: ${({ positionX }) => (positionX ? positionX : "47%")};
+  transorm : translateX(50%)
   cursor: pointer;
   animation: ${moveTopToDown} 1s ease-in infinite;
 `;
 
-const ScrollIcon = () => <ScrollIconDecoration src={doubleIcon} />;
+const ScrollIcon = ({ positionY }) => (
+  <ScrollIconDecoration src={doubleIcon} positionY={positionY} />
+);
 
 export default ScrollIcon;

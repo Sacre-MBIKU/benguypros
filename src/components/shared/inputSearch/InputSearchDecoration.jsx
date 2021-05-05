@@ -10,7 +10,7 @@ const InputSearchDecoration = styled.input`
   position: absolute;
   border-style: none;
   top: 0;
-  right: 0;
+  right: ${props => props.positionX ? props.positionX : "0"};
   color: white;
   opacity: 1;
 

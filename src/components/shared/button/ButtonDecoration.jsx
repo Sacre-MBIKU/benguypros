@@ -20,7 +20,7 @@ const ButtonDecoration = styled.button`
 
   &:hover {
     background-color: transparent;
-    border: 1px solid #f9bf2c;
+    border: 1px solid #fff;
   }
 `;
 

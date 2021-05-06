@@ -10,10 +10,10 @@ font-weight: 700;
 font-size: 30px;
 position: absolute;
 border-style: none;
-color: #fff;
+color: #fff ;
 top: 3%;
 right: ${({positionX}) => positionX ? positionX : "5%"};
-border: 1px solid #f9bf2c;
+border: ${({borderStyle}) => borderStyle = true ? "1px solid #1a1a1a" : "1px solid #f9bf2c"} ;
 `;
 
 export default ButtonSearchDecoration;

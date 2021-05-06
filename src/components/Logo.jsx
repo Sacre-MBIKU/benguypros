@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import logo from "../assets/logo/logo.svg";
+import logoSecond from "../assets/logo/logo-secondary.svg";
 const StyledLogo = styled.img`
   width: 180px;
   height: 80px;
@@ -8,8 +9,8 @@ const StyledLogo = styled.img`
   left: 5px;
 `;
 
-const Logo = () => {
-  return <StyledLogo src={logo} />;
+const Logo = ({logoSecondary}) => {
+  return <StyledLogo src={logoSecondary === true ?  logoSecond : logo} />;
 };
 
 export default Logo;

@@ -8,7 +8,7 @@ import ScrollIcon from "../../../ScrollIcon";
 const HeroSectionSeries = () => (
   <HeroSectionDecoration banner={bannerSection}>
     <HeaderCinema />
-    <Link to="/series">
+    <Link to="/movies">
       <Button positionY="89%" size="15px">
       FILMS
       </Button>

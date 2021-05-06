@@ -1,13 +1,27 @@
 import CardMovieDecoration from "./CardMovieDecoration";
 import ImageMovie from "./ImageMovie";
 import TitleMovie from "./TitleMovie";
-import newMovie from "../../../assets/card/newMovies.jpg";
 
-const CardMovie = ({titleMovie, urlImageMovie}) => {
+const CardMovie = ({
+  titleMovie,
+  urlImageMovie,
+  widthImage,
+  widthTitle,
+  heightImage,
+  cardHeight,
+  positionXTitle, 
+  cardWidth
+}) => {
   return (
-    <CardMovieDecoration>
-      <ImageMovie urlImageMovie={newMovie} titleMovie="Spiderman HomeComing" />
-      <TitleMovie>Game of Thrones</TitleMovie>
+    <CardMovieDecoration cardWidth = {cardWidth} cardHeight={cardHeight}>
+      <ImageMovie
+        width={widthImage}
+        height={heightImage}
+        urlImageMovie={urlImageMovie}
+        titleMovie="Spiderman HomeComing"
+        
+      />
+      <TitleMovie positionXTitle= {positionXTitle} width={widthTitle}> {titleMovie}</TitleMovie>
     </CardMovieDecoration>
   );
 };

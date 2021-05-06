@@ -15,7 +15,8 @@ const ButtonDecoration = styled.button`
   bottom: ${(props) => props.positionY || "5%"};
   cursor: pointer;
   right: ${(props) => props.positionX || "5%"};
-  transition: all .5s ease-in-out;
+  border: ${(props) => props.borderButton || "none"};
+  transition: all 0.5s ease-in-out;
 
   &:hover {
     background-color: transparent;

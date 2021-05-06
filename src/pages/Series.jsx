@@ -1,6 +1,6 @@
 import HeroSectionSeries from "../components/shared/cinema/heroSection/HeroSectionSeries";
 import Footer from "../layouts/home/footer/Footer";
-import MoviesByCategory from "../layouts/home/moviesByCategorie/MoviesByCategory";
+import MoviesByCategory from "../layouts/cinema/moviesByCategorie/MoviesByCategory";
 
 const Movies = () => {
   return (
@@ -10,8 +10,18 @@ const Movies = () => {
       }}
     >
       <HeroSectionSeries />
-      <MoviesByCategory titleCategory="Bay" />
-      <MoviesByCategory titleCategory="Bey" />
+      <MoviesByCategory titleCategory="Beauté" />
+      <MoviesByCategory titleCategory="Poupée" />
+      <MoviesByCategory titleCategory="Beauté" />
+      <MoviesByCategory titleCategory="Poupée" />
+      <MoviesByCategory titleCategory="Beauté" />
+      <MoviesByCategory titleCategory="Poupée" />
+      <MoviesByCategory titleCategory="Beauté" />
+      <MoviesByCategory titleCategory="Poupée" />
+      <MoviesByCategory titleCategory="Beauté" />
+      <MoviesByCategory titleCategory="Poupée" />
+      <MoviesByCategory titleCategory="Beauté" />
+      <MoviesByCategory titleCategory="Poupée" />
       <Footer />
     </div>
   );

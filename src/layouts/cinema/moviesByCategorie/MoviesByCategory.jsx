@@ -1,15 +1,13 @@
-import ScrollIcon from "../../../components/ScrollIcon";
-import LimitationLine from "../../../components/shared/LimitationLine";
+import Button from "../../../components/shared/button/Button";
 import MovieContainer from "../../../components/shared/movieContainer/MovieContainer";
 import TitleCategory from "../../../components/shared/titleCategory/TitleCategory";
 import MoviesByCategorieDecoration from "./MoviesByCategoryDecoration";
 
-const MoviesByCategorie = ({ titleCategory, displayScroll }) => (
+const MoviesByCategorie = ({ titleCategory}) => (
   <MoviesByCategorieDecoration>
-    <LimitationLine />
     <TitleCategory>{titleCategory}</TitleCategory>
     <MovieContainer />
-    <ScrollIcon positionY="2%"  displayScroll={displayScroll} />
+    <Button positionX = "45%" positionY = "5%" size = "14px">voir plus</Button>
   </MoviesByCategorieDecoration>
 );
 export default MoviesByCategorie;

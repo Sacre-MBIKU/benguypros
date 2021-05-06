@@ -1,7 +1,6 @@
 import HeroSectionCinema from "../components/shared/cinema/heroSection/HeroSection";
-import HeaderCinema from "../layouts/HeaderCinema";
 import Footer from "../layouts/home/footer/Footer";
-import MoviesByCategory from "../layouts/home/moviesByCategorie/MoviesByCategory";
+import MoviesByCategory from "../layouts/cinema/moviesByCategorie/MoviesByCategory";
 
 const Movies = () => {
   return (
@@ -12,7 +11,23 @@ const Movies = () => {
     >
       <HeroSectionCinema />
       <MoviesByCategory titleCategory="Bay" />
-      <MoviesByCategory titleCategory="Bey" />
+      <MoviesByCategory titleCategory="Bey" displayScroll= "none" />
+      <MoviesByCategory titleCategory="Bay" />
+      <MoviesByCategory titleCategory="Bey" displayScroll= "none" />
+      <MoviesByCategory titleCategory="Bay" />
+      <MoviesByCategory titleCategory="Bey" displayScroll= "none" />
+      <MoviesByCategory titleCategory="Bay" />
+      <MoviesByCategory titleCategory="Bey" displayScroll= "none" />
+      <MoviesByCategory titleCategory="Bay" />
+      <MoviesByCategory titleCategory="Bey" displayScroll= "none" />
+      <MoviesByCategory titleCategory="Bay" />
+      <MoviesByCategory titleCategory="Bey" displayScroll= "none" />
+      <MoviesByCategory titleCategory="Bay" />
+      <MoviesByCategory titleCategory="Bey" displayScroll= "none" />
+      <MoviesByCategory titleCategory="Bay" />
+      <MoviesByCategory titleCategory="Bey" displayScroll= "none" />
+      <MoviesByCategory titleCategory="Bay" />
+      <MoviesByCategory titleCategory="Bey" displayScroll= "none" />
       <Footer />
     </div>
   );

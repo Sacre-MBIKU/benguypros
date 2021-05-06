@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "../components/shared/button/Button";
 import ContainerCinemaCard from "../components/shared/containerCinemaCards/ContainerCinemaCards";
 import NavBarCategory from "../components/shared/navBarCategory/NavBarCategory";
+import PaginationNavBar from "../components/shared/paginationNavBar/PaginationNavBar";
 import HeaderCinema from "../layouts/HeaderCinema";
 
 const SerieCategory = () => {
@@ -21,6 +22,7 @@ const SerieCategory = () => {
     </Link>
     <NavBarCategory />
     <ContainerCinemaCard />
+    <PaginationNavBar />
     </>
   );
 };

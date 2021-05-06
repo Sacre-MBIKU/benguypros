@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "../components/shared/button/Button";
+import ContainerCinemaCard from "../components/shared/containerCinemaCards/ContainerCinemaCards";
 import NavBarCategory from "../components/shared/navBarCategory/NavBarCategory";
 import HeaderCinema from "../layouts/HeaderCinema";
 
@@ -19,6 +20,8 @@ const MovieCategory = () => {
       </Button>
     </Link>
     <NavBarCategory />
+
+    <ContainerCinemaCard />
     </>
   );
 };

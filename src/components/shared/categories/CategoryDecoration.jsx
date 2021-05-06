@@ -7,6 +7,7 @@ const CategoryDecoration = styled.li`
 list-style : none;
 padding : 0 10px 10px;
 margin : 5px 10px;
+font-weight : 600;
 border-radius : 2px;
 font-family: Barlwow;
 color : #fff;

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "../components/shared/button/Button";
+import NavBarCategory from "../components/shared/navBarCategory/NavBarCategory";
 import HeaderCinema from "../layouts/HeaderCinema";
 
 const MovieCategory = () => {
@@ -17,6 +18,7 @@ const MovieCategory = () => {
         ACCUEIL
       </Button>
     </Link>
+    <NavBarCategory />
     </>
   );
 };

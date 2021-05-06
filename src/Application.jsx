@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Overlay from "./layouts/cinemaDescribe/overlay/Overlay";
 import Home from "./pages/Home";
 import MovieCategory from "./pages/MovieCategory";
 import Movies from "./pages/Movies";
@@ -20,6 +21,9 @@ const Application = () => {
         </Route>
         <Route path="/series-categories">
           <SerieCategory />
+        </Route>
+        <Route path="/overlay">
+          <Overlay />
         </Route>
         <Route exact path="/">
           <Home />

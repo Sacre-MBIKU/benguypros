@@ -9,19 +9,28 @@ const CardMovie = ({
   widthTitle,
   heightImage,
   cardHeight,
-  positionXTitle, 
-  cardWidth
+  positionXTitle,
+  positionYTitle,
+  sizeTitle,
+  cardWidth,
 }) => {
   return (
-    <CardMovieDecoration cardWidth = {cardWidth} cardHeight={cardHeight}>
+    <CardMovieDecoration cardWidth={cardWidth} cardHeight={cardHeight}>
       <ImageMovie
         width={widthImage}
         height={heightImage}
         urlImageMovie={urlImageMovie}
         titleMovie="Spiderman HomeComing"
-        
       />
-      <TitleMovie positionXTitle= {positionXTitle} width={widthTitle}> {titleMovie}</TitleMovie>
+      <TitleMovie
+        positionYTitle={positionYTitle}
+        positionXTitle={positionXTitle}
+        width={widthTitle}
+        sizeTitle = {sizeTitle}
+      >
+        {" "}
+        {titleMovie}
+      </TitleMovie>
     </CardMovieDecoration>
   );
 };

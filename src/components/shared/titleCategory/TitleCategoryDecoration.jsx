@@ -5,8 +5,8 @@ import GoogleFontLoader from "react-google-font-loader";
 
 const TitleCategoryDecoration = styled.h2`
   position: absolute;
-  left: 4%;
-  top: 10%;
+  left: ${({ positionX }) => (positionX ? positionX : "4%")};
+  top: ${({ positionY }) => (positionY ? positionY : "10%")};
   width: auto;
   height: auto;
   padding: 5px 10px;

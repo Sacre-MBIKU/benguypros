@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const TitleMovieDecoration = styled.h3`
   position: absolute;
-  bottom: 0;
+  bottom: ${({ positionYTitle }) => positionYTitle || "0"};
   right: ${({ positionXTitle }) => positionXTitle || "-9px"};
   width: ${({ width }) => width || "200px"};
   height: 13%;
@@ -11,18 +11,33 @@ const TitleMovieDecoration = styled.h3`
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 13px;
-  text-align :center;
-  transition : all .5s ease;
-   &:hover {
+  font-size: ${({ sizeTitle }) => sizeTitle || "13px"};
+  text-align: center;
+  transition: all 0.5s ease;
+  &:hover {
     background-color: #fff;
     color: #1a1a1a;
-    border : none;
+    border: none;
   }
 `;
 
-const TitleMovie = ({ children, width, positionXTitle }) => {
-  return <TitleMovieDecoration positionXTitle = {positionXTitle} width = {width} >{children} </TitleMovieDecoration>;
+const TitleMovie = ({
+  children,
+  width,
+  positionXTitle,
+  positionYTitle,
+  sizeTitle,
+}) => {
+  return (
+    <TitleMovieDecoration
+      positionYTitle={positionYTitle}
+      positionXTitle={positionXTitle}
+      sizeTitle={sizeTitle}
+      width={width}
+    >
+      {children}{" "}
+    </TitleMovieDecoration>
+  );
 };
 
 export default TitleMovie;

@@ -8,8 +8,8 @@ transition : all .5s ease .5s;
 z-index : 20;
 
 &:hover{
-  scale : 1.2;
-  box-shadow: 9px 9px #fff;
+  scale : 1.08;
+  box-shadow: none;
 }
 
 `;

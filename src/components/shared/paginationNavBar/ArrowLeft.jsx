@@ -1,8 +1,6 @@
-import ArrowLeftDecoration from "./ArrowLeftDecoration"
+import ArrowLeftDecoration from "./ArrowLeftDecoration";
 
 const ArrowLeft = () => {
-    return (
-        <ArrowLeftDecoration></ArrowLeftDecoration>
-    )
+  return <ArrowLeftDecoration></ArrowLeftDecoration>;
 };
 export default ArrowLeft;

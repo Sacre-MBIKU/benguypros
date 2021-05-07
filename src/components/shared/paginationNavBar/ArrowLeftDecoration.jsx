@@ -4,6 +4,7 @@ import arrowLeft from "../../../assets/icons/arrowLeft.svg";
 const ArrowLeftDecoration = styled.li`
   background-image: url("${arrowLeft}");
   background-size : cover;
+  list-style : none;
   border : 3px solid #f9bf2c;
   width: 30px;
   height: 30px;

@@ -9,6 +9,7 @@ const OverlayDecoration = styled.div`
     background-color : rgba(26, 27, 34, 0.60);
     display : flex;
     justify-content : center;
+    padding-bottom : 100px
 `;
 
 export default OverlayDecoration;

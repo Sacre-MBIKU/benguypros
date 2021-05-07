@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
-const CastingDecoration = styled.section`
+const SimilarCinemaDecoration = styled.section`
 width: 95%;
 height: 450px;
 margin : 40px 0;
 position: relative;
 display : flex;
-align-items : space-between;
+align-items : center;
 justify-content : space-between;
 `;
-
-export default CastingDecoration;
+export default SimilarCinemaDecoration;

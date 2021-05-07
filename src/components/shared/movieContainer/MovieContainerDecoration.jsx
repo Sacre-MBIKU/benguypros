@@ -18,6 +18,18 @@ const MovieContainerDecoration = styled.article`
           height: 80%;
         `
       : ""}
+      ${({ similarCinema }) =>
+    similarCinema === true
+      ? css`
+          top: 20%;
+          left: 10%;
+          width: 80%;
+          height: 66.5%;
+          border-right : 3px solid #f9bf2c;
+          border-left : 3px solid #f9bf2c;
+          padding-left : 2.5%;
+        `
+      : ""}
 `;
 
 export default MovieContainerDecoration;

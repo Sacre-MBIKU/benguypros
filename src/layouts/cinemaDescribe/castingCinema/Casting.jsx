@@ -2,10 +2,7 @@ import CardMovie from "../../../components/shared/cardMovie/CardMovie";
 import MovieContainerDecoration from "../../../components/shared/movieContainer/MovieContainerDecoration";
 import TitleCategory from "../../../components/shared/titleCategory/TitleCategory";
 import CastingDecoration from "./CastingDecoration";
-import newMovie from "../../../assets/backgrounds/project 32.jpg";
-import newMovie2 from "../../../assets/backgrounds/project 33.jpg";
-import newMovie3 from "../../../assets/backgrounds/project 34.jpg";
-import newMovie4 from "../../../assets/backgrounds/project 35.jpg";
+import newMovie from "../../../assets/backgrounds/releaser.jpg";
 
 const Casting = () => {
   return (
@@ -18,8 +15,8 @@ const Casting = () => {
           widthTitle="170px"
           heightImage="230px"
           widthImage="170px"
-          positionYTitle = "10%"
-          positionXTitle = "10%"
+          positionYTitle="10%"
+          positionXTitle="10%"
           titleMovie="Game of Thrones"
           urlImageMovie={newMovie}
         />
@@ -27,28 +24,28 @@ const Casting = () => {
           widthTitle="170px"
           heightImage="230px"
           widthImage="170px"
-          positionYTitle = "10%"
-          positionXTitle = "10%"
+          positionYTitle="10%"
+          positionXTitle="10%"
           titleMovie="Us"
-          urlImageMovie={newMovie2}
+          urlImageMovie={newMovie}
         />
         <CardMovie
           widthTitle="170px"
           heightImage="230px"
           widthImage="170px"
-          positionYTitle = "10%"
-          positionXTitle = "10%"
+          positionYTitle="10%"
+          positionXTitle="10%"
           titleMovie="Free Guy"
-          urlImageMovie={newMovie3}
+          urlImageMovie={newMovie}
         />
         <CardMovie
           widthTitle="170px"
           heightImage="230px"
           widthImage="170px"
-          positionYTitle = "10%"
-          positionXTitle = "10%"
+          positionYTitle="10%"
+          positionXTitle="10%"
           titleMovie="1917"
-          urlImageMovie={newMovie4}
+          urlImageMovie={newMovie}
         />
       </MovieContainerDecoration>
     </CastingDecoration>

@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import CardMovie  from "../cardMovie/CardMovie";
-import newMovie from "../../../assets/card/newMovies4.jpg";
-import newMovie2 from "../../../assets/card/newMovies2.jpg";
-import newMovie3 from "../../../assets/card/newMovies3.jpg";
+import newMovie from "../../../assets/backgrounds/releaser.jpg";
 import ContainerCinemaCardsDecoration from "./ContainerCinemaCardsDecoration";
 
 const ContainerCinemaCard = () => {

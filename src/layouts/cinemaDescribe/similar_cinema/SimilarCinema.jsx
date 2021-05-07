@@ -2,9 +2,7 @@ import CardMovie from "../../../components/shared/cardMovie/CardMovie";
 import MovieContainerDecoration from "../../../components/shared/movieContainer/MovieContainerDecoration";
 import TitleCategory from "../../../components/shared/titleCategory/TitleCategory";
 import SimilarCinemaDecoration from "./SimilarCinemaDecoration";
-import newMovie from "../../../assets/backgrounds/project 32.jpg";
-import newMovie2 from "../../../assets/backgrounds/project 33.jpg";
-import newMovie3 from "../../../assets/backgrounds/project 34.jpg";
+import newMovie from "../../../assets/backgrounds/releaser.jpg";
 import ArrowLeft from "../../../components/shared/paginationNavBar/ArrowLeft";
 import ArrowRight from "../../../components/shared/paginationNavBar/ArrowRight";
 
@@ -32,7 +30,7 @@ const SimilarCinema = () => {
           positionYTitle = "10%"
           positionXTitle = "10%"
           titleMovie="Us"
-          urlImageMovie={newMovie2}
+          urlImageMovie={newMovie}
         />
         <CardMovie
           widthTitle="170px"
@@ -41,7 +39,7 @@ const SimilarCinema = () => {
           positionYTitle = "10%"
           positionXTitle = "10%"
           titleMovie="Free Guy"
-          urlImageMovie={newMovie3}
+          urlImageMovie={newMovie}
         />
       </MovieContainerDecoration>
       <ArrowRight />

@@ -7,8 +7,13 @@ import ScrollIcon from "../../../components/ScrollIcon";
 import HeroSlogan from "../../../components/heroSlogan/HeroSlogan";
 import Header from "../../../components/shared/header/Header";
 import { Link } from "react-router-dom";
+import scrollTo from "../../../controllers/scrollTo";
 
 const HeroSection = () => {
+  const scrollToNextSection = (e) => {
+    scrollTo(650);
+  };
+
   return (
     <>
       <HeroSectionDecoration>
@@ -21,14 +26,19 @@ const HeroSection = () => {
         />
         <HeroSlogan />
         <Link to="/series">
-          <Button>SERIES</Button>
+          <Button responsiveSerieButton540>SERIES</Button>
         </Link>
         <Link to="/movies">
-          <Button bgSecondary="#080A16" positionX="22%">
+          <Button
+            responsiveButton768
+            responsiveFilmButton540
+            bgSecondary="#080A16"
+            positionX="22%"
+          >
             FILMS{" "}
           </Button>
         </Link>
-        <ScrollIcon />
+        <ScrollIcon onClick={scrollToNextSection} />
       </HeroSectionDecoration>
     </>
   );

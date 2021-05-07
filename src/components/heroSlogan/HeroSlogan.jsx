@@ -2,7 +2,7 @@ import HeroSloganDecoration from "./HeroSloganDecoration";
 
 const HeroSlogan = () => (
   <HeroSloganDecoration>
-    vos <span>films</span> et <span> séries</span> préférés à portée de main.
+    Vos <span>films</span> et <span> séries</span> préférés à portée de main.
   </HeroSloganDecoration>
 );
 

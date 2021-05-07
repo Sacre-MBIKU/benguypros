@@ -7,6 +7,11 @@ const StyledLogo = styled.img`
   position: absolute;
   top: 5px;
   left: 5px;
+
+  @media (max-width : 385px){
+    top : 10%;
+    left : 25%
+  }
 `;
 
 const Logo = ({logoSecondary}) => {

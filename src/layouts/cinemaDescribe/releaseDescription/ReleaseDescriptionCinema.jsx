@@ -2,6 +2,7 @@ import CardMovie from "../../../components/shared/cardMovie/CardMovie";
 import TitleCategory from "../../../components/shared/titleCategory/TitleCategory";
 import banner from "../../../assets/backgrounds/releaser.jpg";
 import ReleaseDescriptionCinemaDecoration from "./ReleaseDescriptionCinemaDecoration";
+import TitleCategoryRelease from "../titleCategoryRelease/TitleCategoryRelease";
 
 const ReleaseDescriptionCinema = () => {
   return (
@@ -19,6 +20,7 @@ const ReleaseDescriptionCinema = () => {
         positionXTitle="10%"
         urlImageMovie={banner}
       />
+      <TitleCategoryRelease/>
     </ReleaseDescriptionCinemaDecoration>
   );
 };

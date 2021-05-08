@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const MovieContainerDecoration = styled.article`
   position: absolute;
@@ -7,13 +7,12 @@ const MovieContainerDecoration = styled.article`
   width: 90%;
   height: 50%;
   display: flex;
-  flex-flow : wrap;
+  flex-flow: wrap;
   justify-content: space-between;
 
-  @media (max-width : 1000px) {
-    justify-content : space-around;
+  @media (max-width: 1000px) {
+    justify-content: space-around;
   }
-
 `;
 
 export default MovieContainerDecoration;

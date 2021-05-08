@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const TitleMovieDecoration = styled.h3`
   position: absolute;
@@ -14,11 +14,9 @@ const TitleMovieDecoration = styled.h3`
   font-size: ${({ sizeTitle }) => sizeTitle || "13px"};
   text-align: center;
   transition: all 0.5s ease;
-  background-color : #1a1a1a;
-  opacity : .5;
-  z-index : 2;
-  
-
+  background-color: #1a1a1a;
+  opacity: 0.5;
+  z-index: 2;
 `;
 
 const TitleMovie = ({
@@ -27,7 +25,7 @@ const TitleMovie = ({
   positionXTitle,
   positionYTitle,
   sizeTitle,
-  isTitleMovieDisplayed
+  isTitleMovieDisplayed,
 }) => {
   return (
     <TitleMovieDecoration
@@ -35,7 +33,7 @@ const TitleMovie = ({
       positionXTitle={positionXTitle}
       sizeTitle={sizeTitle}
       width={width}
-      isTitleMovieDisplayed = {isTitleMovieDisplayed}
+      isTitleMovieDisplayed={isTitleMovieDisplayed}
     >
       {children}{" "}
     </TitleMovieDecoration>

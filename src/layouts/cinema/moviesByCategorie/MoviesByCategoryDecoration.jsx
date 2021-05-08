@@ -8,6 +8,7 @@ const MoviesByCategorieDecoration = styled.section`
   flex-direction: column;
   align-items: center;
   position: relative;
+  
 `;
 
 export default MoviesByCategorieDecoration;

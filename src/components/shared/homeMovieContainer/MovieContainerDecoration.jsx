@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const MovieContainerDecoration = styled.article`
-  position: absolute;
-  top: 20%;
-  left: 4%;
+  
   width: 90%;
-  height: 65%;
-  display: flex;
-  justify-content: space-between;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4fr 4fr 4fr ;
+ 
 `;
 
 export default MovieContainerDecoration;

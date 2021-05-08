@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import GoogleFontLoader from "react-google-font-loader";
 
 <GoogleFontLoader fonts={[{ font: "Barlow", weights: [400, 700, 900] }]} />;
@@ -15,6 +15,12 @@ const TitleCategoryDecoration = styled.h2`
   font-family: Barlow;
   font-size: ${({ size }) => (size ? size : "30px")};
   cursor: pointer;
+
+  ${({TitleCategorySecondary}) => TitleCategorySecondary ?
+  css`
+    position : relative;
+  `: ""
+}
 `;
 
 export default TitleCategoryDecoration;

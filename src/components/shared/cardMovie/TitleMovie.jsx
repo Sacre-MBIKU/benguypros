@@ -1,24 +1,24 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const TitleMovieDecoration = styled.h3`
   position: absolute;
-  bottom: ${({ positionYTitle }) => positionYTitle || "0"};
-  right: ${({ positionXTitle }) => positionXTitle || "-9px"};
-  width: ${({ width }) => width || "200px"};
-  height: 13%;
+  top: ${({ positionYTitle }) => "0" || "0"};
+  right: ${({ positionXTitle }) => "0" || "0"};
+  width: ${({ width }) => "50%" || "30%"};
+  height: 50%;
   border: 1px solid #f9bf2c;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #f9bf2c;
   font-size: ${({ sizeTitle }) => sizeTitle || "13px"};
   text-align: center;
   transition: all 0.5s ease;
-  &:hover {
-    background-color: #fff;
-    color: #1a1a1a;
-    border: none;
-  }
+  background-color : #1a1a1a;
+  opacity : .5;
+  z-index : 2;
+  
+
 `;
 
 const TitleMovie = ({
@@ -27,6 +27,7 @@ const TitleMovie = ({
   positionXTitle,
   positionYTitle,
   sizeTitle,
+  isTitleMovieDisplayed
 }) => {
   return (
     <TitleMovieDecoration
@@ -34,6 +35,7 @@ const TitleMovie = ({
       positionXTitle={positionXTitle}
       sizeTitle={sizeTitle}
       width={width}
+      isTitleMovieDisplayed = {isTitleMovieDisplayed}
     >
       {children}{" "}
     </TitleMovieDecoration>

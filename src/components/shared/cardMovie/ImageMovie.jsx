@@ -1,16 +1,21 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const ImageMovieDecoration = styled.img`
-width : ${({width}) => width || "200px"};
-height : ${({height}) => height || "270px"};
+width : ${({width}) => "100%" || "100%"};
+height : ${({height}) => "100%" || "100%"};
 box-shadow: 9px 9px #f9bf2c;
 transition : all .5s ease .5s;
 z-index : 20;
 
 &:hover{
-  scale : 1.08;
-  box-shadow: none;
+box-shadow: none;
+z-index : -2;
+opacity : .5
 }
+ 
+
+
+
 
 `;
 

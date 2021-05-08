@@ -1,42 +1,34 @@
 import CardMovie from "../cardMovie/CardMovie";
 import MovieContainerDecoration from "./MovieContainerDecoration";
-import newMovie from "../../../assets/backgrounds/releaser.jpg";
+const newMovie =
+"https://image.tmdb.org/t/p/w300//nj01hspawPof0mJmlgfjuLyJuRN.jpg";
 
-const MovieContainer = ({ widthImage, widthTitle, heightImage }) => {
+const MovieContainer = () => {
   return (
     <MovieContainerDecoration>
       <CardMovie
-        widthTitle={widthTitle}
-        heightImage={heightImage}
-        widthImage={widthImage}
         titleMovie="Game of Thrones"
         urlImageMovie={newMovie}
       />
       <CardMovie
-        widthTitle={widthTitle}
-        heightImage={heightImage}
-        widthImage={widthImage}
         titleMovie="Us"
-        urlImageMovie={newMovie}
+        urlImageMovie={
+          newMovie
+        }
       />
       <CardMovie
-        widthTitle={widthTitle}
-        heightImage={heightImage}
-        widthImage={widthImage}
         titleMovie="Free Guy"
-        urlImageMovie={newMovie}
+        urlImageMovie={
+          newMovie
+        }
       />
       <CardMovie
-        widthTitle={widthTitle}
-        heightImage={heightImage}
-        widthImage={widthImage}
         titleMovie="1917"
-        urlImageMovie={newMovie}
+        urlImageMovie={
+          newMovie
+        }
       />
       <CardMovie
-        widthTitle={widthTitle}
-        heightImage={heightImage}
-        widthImage={widthImage}
         titleMovie="Spiderman Homecoming"
         urlImageMovie={newMovie}
       />

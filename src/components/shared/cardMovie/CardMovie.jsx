@@ -1,9 +1,10 @@
+import { FaInfoCircle } from "react-icons/fa";
 import CardMovieDecoration from "./CardMovieDecoration";
 import ImageMovie from "./ImageMovie";
 import TitleMovie from "./TitleMovie";
+const infoIcon = <FaInfoCircle />;
 
 const CardMovie = ({
-  titleMovie,
   urlImageMovie,
   widthImage,
   widthTitle,
@@ -11,25 +12,32 @@ const CardMovie = ({
   cardHeight,
   positionXTitle,
   positionYTitle,
-  sizeTitle,
   cardWidth,
+  isMovieDisplayed,
 }) => {
   return (
-    <CardMovieDecoration cardWidth={cardWidth} cardHeight={cardHeight}>
+    <CardMovieDecoration
+      isMovieDisplayed={isMovieDisplayed}
+      cardWidth={cardWidth}
+      cardHeight={cardHeight}
+    >
       <ImageMovie
+        isMovieDisplayed={isMovieDisplayed}
         width={widthImage}
         height={heightImage}
         urlImageMovie={urlImageMovie}
         titleMovie="Spiderman HomeComing"
+        isTitleMovieDisplayed
       />
       <TitleMovie
         positionYTitle={positionYTitle}
         positionXTitle={positionXTitle}
         width={widthTitle}
-        sizeTitle = {sizeTitle}
+        sizeTitle="2rem"
+        isTitleMovieDisplayed
       >
         {" "}
-        {titleMovie}
+        {infoIcon}
       </TitleMovie>
     </CardMovieDecoration>
   );

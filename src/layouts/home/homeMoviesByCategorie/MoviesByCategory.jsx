@@ -10,7 +10,7 @@ import MoviesByCategorieDecoration from "./MoviesByCategoryDecoration";
 
 const MoviesByCategorie = ({ titleCategory, displayScroll, widthImage, widthTitle, heightImage }) => (
   <MoviesByCategorieDecoration>
-    <TitleCategory>{titleCategory}</TitleCategory>
+    <TitleCategory TitleCategorySecondary>{titleCategory}</TitleCategory>
     <MovieContainer widthImage = {widthImage} widthTitle = {widthTitle} heightImage = {heightImage}/>
     <ScrollIcon onClick = {scrollToNextSection} positionY="2%"  displayScroll={displayScroll} />
   </MoviesByCategorieDecoration>

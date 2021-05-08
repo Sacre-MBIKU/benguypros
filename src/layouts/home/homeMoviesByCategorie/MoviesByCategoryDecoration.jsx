@@ -6,7 +6,7 @@ const MoviesByCategorieDecoration = styled.section`
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   position: relative;
 `;
 
